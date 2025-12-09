@@ -10,7 +10,7 @@ export default function Navbar() {
     <nav className="w-full border-b border-gray-200">
       <div className="max-w-6xl mx-auto flex items-center justify-between p-4">
         <Link href="/" className="font-semibold text-xl">
-          Mamun
+          All Mamun
         </Link>
 
         {/* Desktop links */}
