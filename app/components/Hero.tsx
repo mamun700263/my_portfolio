@@ -3,7 +3,7 @@ export default function Hero() {
     <section className="min-h-screen flex flex-col items-center justify-center px-6 text-center">
 
       <h1 className="text-5xl font-bold text-blue-600">Md Abdullah All Mamun</h1>
-      <p className="mt-4 text-gray-700 dark:text-gray-300">Backend Engineer | Competitive Programmer</p> 
+      <p className="mt-4 text-gray-700 dark:text-gray-300">Backend Engineer | Competitive Programmer || ML learner</p> 
       <div className="mt-8 flex gap-4">
         <a
           href="/projects"
