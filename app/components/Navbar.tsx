@@ -10,7 +10,7 @@ export default function Navbar() {
     <nav className="w-full border-b border-gray-200">
       <div className="max-w-6xl mx-auto flex items-center justify-between p-4">
         <Link href="/" className="font-semibold text-xl">
-          All Mamun
+         All Mamun
         </Link>
 
         {/* Desktop links */}
@@ -18,6 +18,7 @@ export default function Navbar() {
           <Link href="/about">About</Link>
           <Link href="/skills">Skills</Link>
           <Link href="/projects">Projects</Link>
+          <Link href="/vlogs">Vlogs</Link>
           <Link href="/contact">Contact</Link>
         </div>
 
