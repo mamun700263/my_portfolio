@@ -12,12 +12,13 @@ export default function SkillSection() {
   {skills.map((skill) => (
     <div key={skill.name} className="flex flex-col items-center">
       <Image
-        // src={skill.icon}
-        src="/icons/x.png"
+        src={skill.icon}
+        // src="/icons/x.png"
         alt={skill.name}
         width={64}
         height={64}
         className="mb-2"
+        unoptimized
       />
       <span className="text-gray-300 font-semibold">{skill.name}</span>
 
