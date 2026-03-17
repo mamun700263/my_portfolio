@@ -4,7 +4,14 @@ import { NextResponse } from 'next/server';
 const transporter = nodemailer.createTransport({
   host: process.env.SMTP_HOST,
   port: Number(process.env.SMTP_PORT),
-  auth: { user: process.env.SMTP_USER, pass: process.env.SMTP_PASS },
+  secure: Number(process.env.SMTP_PORT) === 465, // true for 465, false for 587
+  auth: {
+    user: process.env.SMTP_USER,
+    pass: process.env.SMTP_PASS,
+  },
+  tls: {
+    rejectUnauthorized: false, // optional: some servers require this
+  },
 });
 
 function isValidEmail(email: string) {
@@ -29,13 +36,13 @@ export async function POST(req: Request) {
       from: process.env.SMTP_USER,
       to: process.env.CONTACT_EMAIL,
       replyTo: email,
-      subject: `${subject} | From ${name}`,
+      subject: `New message: ${subject} | From ${name}`,
       text: `Name: ${name}\nEmail: ${email}\n\n${message}`,
     });
-
+    console.log('Email sent successfully!');
     return NextResponse.json({ message: 'Email sent successfully!' });
   } catch (err: any) {
-    console.error(err);
+    console.error('SMTP send error:', err);
     return NextResponse.json({ error: err.message || 'Email failed' }, { status: 500 });
   }
 }
