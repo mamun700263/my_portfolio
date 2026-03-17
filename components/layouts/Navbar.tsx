@@ -7,10 +7,10 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="w-full border-b border-gray-200">
+    <nav className="w-full ">
       <div className="max-w-6xl mx-auto flex items-center justify-between p-4">
         <Link href="/" className="font-semibold text-xl">
-         All Mamun
+         Home
         </Link>
 
         {/* Desktop links */}

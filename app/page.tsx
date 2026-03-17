@@ -1,10 +1,16 @@
-import AboutPage from "./about/page"
-import Hero from "./components/Hero"
-
+import AboutSection from "@/components/sections/About"
+import HeroSection from "@/components/sections/Hero"
+import SkillsSection from "@/components/sections/Skills"
+import ProjectsSection from "@/components/sections/Projects"
+import ContactsSection from "@/components/sections/Contacts"
 export default function Home() {
   return (
-    <main className="p-10 min-h-screen flex flex-col items-center justify-center bg-gray-100 dark:bg-gray-900">
-      <Hero></Hero>
+    <main className=""  >
+      <HeroSection />
+      <AboutSection />
+      <SkillsSection />
+      <ProjectsSection />
+      <ContactsSection />
     </main>
   )
 }
