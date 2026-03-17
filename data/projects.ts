@@ -16,19 +16,20 @@ export const projects: Project[] = [
     link: "https://github.com/mamun700263/amazon-scraper",
   },
   {
-    name: "Datastrike Automation Platform",
+    name: "Narayanpur High School Backend",
     description:
-      "FastAPI + Celery system for scraping, automation, multi-format export (CSV, JSON, Excel, GSheet).",
-    image: "/projects/datastrike.png",
-    techStack: ["Python", "FastAPI", "Celery", "PostgreSQL"],
-    link: "https://github.com/mamun700263/datastrike",
+      "Full Stack web app to maintain a high schools students, teachers , staff built with dajngo , react, redis used by 500+",
+    image: "/projects/narayanpur_high_school_backend.png",
+    techStack: ["Python", "Django", "redis", "celery"],
+    link: "https://narayanpur-high-school.onrender.com/",
   },
-  {
-    name: "Course Platform",
+    {
+    name: "Narayanpur High School Frontend",
     description:
-      "Modular, high-performance platform for managing and delivering courses with dashboards.",
-    image: "/projects/course_platform.png",
-    techStack: ["Django", "React", "Tailwind", "PostgreSQL"],
-    link: "https://github.com/mamun700263/course-platform",
-  },
+      "Full Stack web app to maintain a high schools students, teachers , staff built with dajngo , react, redis used by 500+",
+    image: "/projects/narayanpur_high_school.png",
+    techStack: ["React", "Tailwind"],
+    link: "https://www.narayanpurhighschool.edu.bd/",
+  }
+
 ];
