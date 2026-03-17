@@ -13,7 +13,7 @@ export default function SkillSection() {
     <div key={skill.name} className="flex flex-col items-center">
       <Image
         // src={skill.icon}
-        src="/icons/git.svg"
+        src="/icons/x.png"
         alt={skill.name}
         width={64}
         height={64}
