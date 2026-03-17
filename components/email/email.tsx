@@ -13,7 +13,7 @@ const handleSubmit = async (e: React.FormEvent) => {
   e.preventDefault();
   setStatus('Sending...');
   try {
-    const res = await fetch('/api/contact', {
+    const res = await fetch('/api/email', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ ...form, subject: 'Portfolio Contact Form' }),
