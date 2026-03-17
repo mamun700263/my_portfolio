@@ -16,10 +16,9 @@ const handleSubmit = async (e: React.FormEvent) => {
     const res = await fetch('/api/email', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ ...form, subject: 'Portfolio Contact Form' }),
+      body: JSON.stringify({ ...form, subject: 'All Mamun:: ' }),
     });
     const data = await res.json();
-    console.log(data)
     if (res.ok) {
       setStatus('Message sent successfully!');
       setForm({ name: '', email: '', message: '',subject:'',company:''});
