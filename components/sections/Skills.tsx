@@ -24,7 +24,7 @@ export default function SkillSection() {
         <div className="w-20 h-2 bg-gray-700 rounded-full mt-1">
           <div
             className="h-2 bg-white rounded-full"
-            style={{ width: `${skill.level}%` }}
+            style={{ width: `${skill.level}%` }} //where?
           ></div>
         </div>
       )}
