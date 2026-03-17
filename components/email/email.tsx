@@ -3,7 +3,7 @@
 import { useState } from 'react';
 
 export default function EmailForm() {
-  const [form, setForm] = useState({ name: '', email: '', message: '',subject:'' });
+  const [form, setForm] = useState({ name: '', email: '', message: '',subject:'',company:'' });
   const [status, setStatus] = useState('');
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -22,7 +22,7 @@ const handleSubmit = async (e: React.FormEvent) => {
     console.log(data)
     if (res.ok) {
       setStatus('Message sent successfully!');
-      setForm({ name: '', email: '', message: '',subject:''});
+      setForm({ name: '', email: '', message: '',subject:'',company:''});
     } else {
       setStatus(`Error: ${data.error}`);
     }
@@ -73,14 +73,25 @@ const handleSubmit = async (e: React.FormEvent) => {
             onChange={handleChange}
             className="px-4 py-3 rounded-lg bg-gray-900 text-white border border-gray-700 focus:outline-none focus:border-purple-400 resize-none h-32"
           ></textarea>
-
-          <button
-            type="submit"
-            className="px-6 py-3 bg-purple-600 text-white font-semibold rounded-lg hover:bg-purple-500 transition"
-          >
-            Send Message
-          </button>
-        {status && <p className="mt-4">{status}</p>}
+      <input type="text" name="company" style={{ display: 'none' }} onChange={handleChange}/>
+      <button
+        type="submit"
+        disabled={status === 'Sending...'}
+        className={`px-6 py-3 font-semibold rounded-lg text-white ${
+          status === 'Sending...' ? 'bg-gray-400 cursor-not-allowed' : 'bg-purple-600 hover:bg-purple-500'
+        }`}
+      >
+        {status === 'Sending...' ? 'Sending...' : 'Send Message'}
+      </button>
+        {status && (
+        <p
+          className={`mt-4 ${
+            status.includes('Error') ? 'text-red-500' : 'text-green-500'
+          }`}
+        >
+          {status}
+        </p>
+      )}
         </form>
 
   );

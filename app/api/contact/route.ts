@@ -12,7 +12,12 @@ function isValidEmail(email: string) {
 }
 
 export async function POST(req: Request) {
-  const { name, email, message, subject } = await req.json();
+  const { name, email, message, subject, company } = await req.json();
+
+    // reject if honeypot filled
+    if (company) {
+      return NextResponse.json({ error: 'Spam detected' }, { status: 400 });
+    }
 
   if (!name || !email || !message || !subject)
     return NextResponse.json({ error: 'All fields are required.' }, { status: 400 });
@@ -24,7 +29,7 @@ export async function POST(req: Request) {
       from: process.env.SMTP_USER,
       to: process.env.CONTACT_EMAIL,
       replyTo: email,
-      subject: `New message: ${subject} | From ${name}`,
+      subject: `${subject} | From ${name}`,
       text: `Name: ${name}\nEmail: ${email}\n\n${message}`,
     });
 
