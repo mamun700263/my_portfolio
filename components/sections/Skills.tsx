@@ -12,7 +12,8 @@ export default function SkillSection() {
   {skills.map((skill) => (
     <div key={skill.name} className="flex flex-col items-center">
       <Image
-        src={skill.icon}
+        // src={skill.icon}
+        src="/icons/git.svg"
         alt={skill.name}
         width={64}
         height={64}
