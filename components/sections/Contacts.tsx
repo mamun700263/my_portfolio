@@ -16,7 +16,7 @@ export default function ContactSection() {
           <p>
             <strong>Email:</strong>{" "}
             <a href="mailto:mamun700263@gmail.com" className="text-purple-400 underline">
-              mamun@example.com
+              mamun700263@gmail.com
             </a>
           </p>
 
