@@ -7,14 +7,7 @@ export type Project = {
 };
 
 export const projects: Project[] = [
-  {
-    name: "Amazon Scraper",
-    description:
-      "Production-grade scraper for Amazon, built with Scrapy + Playwright, stealth and anti-bot optimized.",
-    image: "/projects/amazon_scraper.png",
-    techStack: ["Python", "Scrapy", "Playwright", "Docker"],
-    link: "https://github.com/mamun700263/amazon-scraper",
-  },
+
   {
     name: "Narayanpur High School Backend",
     description:
@@ -30,6 +23,14 @@ export const projects: Project[] = [
     image: "/projects/narayanpur_high_school.png",
     techStack: ["React", "Tailwind"],
     link: "https://www.narayanpurhighschool.edu.bd/",
+  },
+    {
+    name: "Amazon Scraper",
+    description:
+      "Production-grade scraper for Amazon, built with Scrapy + Playwright, stealth and anti-bot optimized.",
+    image: "/projects/amazon_scraper.png",
+    techStack: ["Python", "Scrapy", "Playwright", "Docker"],
+    link: "https://github.com/mamun700263/amazon-scraper",
   }
 
 ];
