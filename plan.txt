@@ -1,0 +1,21 @@
+hero section
+
+1. I am Md Abdullah All Mamun a Fullstack Engineer Problem solver and Fast learner
+2. a photo of mine
+3. Some one who can solve real world problems and reliable
+4. link of my github and projects
+
+about
+a more detail about me so that the viewr can be 100% sure i am real person
+with my current study info and living
+
+skills 
+what skills i present
+
+projects
+top 3 of my best projects who are in real worl use
+
+contact
+how to contact me and a email sending box.
+
+(they all will be in scroll but there will be separate pages about all this things with more details and a few extra pages achivements, cp and vlogs or vidos)

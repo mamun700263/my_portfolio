@@ -17,7 +17,6 @@ export default function ContactSection() {
         {/* Left Info */}
         <div className="space-y-6 text-gray-300">
           <p>
-            I'm currently open to remote or freelance opportunities.
             You can reach me via email or check out my GitHub.
           </p>
 

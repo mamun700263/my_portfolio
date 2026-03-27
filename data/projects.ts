@@ -8,20 +8,13 @@ export type Project = {
 
 export const projects: Project[] = [
 
-  {
-    name: "Narayanpur High School Backend",
-    description:
-      "Full Stack web app to maintain a high schools students, teachers , staff built with dajngo , react, redis used by 500+",
-    image: "/projects/narayanpur_high_school_backend.png",
-    techStack: ["Python", "Django", "redis", "celery"],
-    link: "https://narayanpur-high-school.onrender.com/",
-  },
+
     {
-    name: "Narayanpur High School Frontend",
+    name: "Narayanpur High School",
     description:
       "Full Stack web app to maintain a high schools students, teachers , staff built with dajngo , react, redis used by 500+",
     image: "/projects/narayanpur_high_school.png",
-    techStack: ["React", "Tailwind"],
+    techStack: ["React", "Tailwind","Python", "Django", "redis", "celery"],
     link: "https://www.narayanpurhighschool.edu.bd/",
   },
     {
