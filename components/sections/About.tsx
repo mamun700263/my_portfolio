@@ -13,7 +13,7 @@ export default function AboutSection() {
         </h2>
 
         <p className="text-gray-300 text-base md:text-lg leading-relaxed">
-          Hi! I’m <strong>Md Abdullah All Mamun</strong>, a Fullstack Backend Engineer and Competitive Programmer.
+          Hi! I’m <strong>Md Abdullah All Mamun</strong>, a  Backend Engineer and Competitive Programmer.
           I build reliable, scalable systems using Python, Django, FastAPI, and modern web technologies. I love solving real-world problems and automating workflows.
         </p>
 
