@@ -17,7 +17,7 @@ export default function HeroSection() {
       I build scalable backend systems and automation platforms
       using Python, Django, FastAPI, and modern web technologies.
     </h3>
-
+    <h4>Available to work parttime in uk during term times and fulltime during vacation</h4>
     <div className="flex gap-4 mt-4">
       <a
         href="https://github.com/mamun700263"

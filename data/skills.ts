@@ -13,4 +13,10 @@ export const skills: Skill[] = [
   { name: "Playwright", icon: "/icons/playwright.svg", level: 85 },
   { name: "SQL", icon: "/icons/sql.svg", level: 80 },
   { name: "Git", icon: "/icons/git.svg", level: 90 },
+  { name: "Docker", icon: "/icons/Docker.svg", level:50},
+  { name: "Redis", icon: "/icons/Redis.svg", level:90},
+  { name: "Celery", icon: "/icons/Celery.svg", level:60},
+  { name: "RestAPI", icon: "/icons/RestAPI.svg", level:60},
+  { name: "PostgresSQL", icon: "/icons/PostgresSQL.svg", level:60},
+  
 ];
