@@ -5,18 +5,18 @@ export type Skill = {
 };
 
 export const skills: Skill[] = [
-  { name: "Python", icon: "/icons/python.svg", level: 95 },
-  { name: "Django", icon: "/icons/django.svg", level: 90 },
-  { name: "FastAPI", icon: "/icons/fastapi.svg", level: 85 },
-  { name: "React", icon: "/icons/react.svg", level: 80 },
-  { name: "Scrapy", icon: "/icons/scrapy.svg", level: 90 },
-  { name: "Playwright", icon: "/icons/playwright.svg", level: 85 },
-  { name: "SQL", icon: "/icons/sql.svg", level: 80 },
-  { name: "Git", icon: "/icons/git.svg", level: 90 },
-  { name: "Docker", icon: "/icons/Docker.svg", level:50},
-  { name: "Redis", icon: "/icons/Redis.svg", level:90},
-  { name: "Celery", icon: "/icons/Celery.svg", level:60},
-  { name: "RestAPI", icon: "/icons/RestAPI.svg", level:60},
-  { name: "PostgresSQL", icon: "/icons/PostgresSQL.svg", level:60},
+  { name: "Python", icon: "/icons/skills/python.svg", level: 95 },
+  { name: "Django", icon: "/icons/skills/django.svg", level: 90 },
+  { name: "FastAPI", icon: "/icons/skills/fastapi.svg", level: 85 },
+  { name: "React", icon: "/icons/skills/react.svg", level: 80 },
+  { name: "Scrapy", icon: "/icons/skills/scrapy.svg", level: 90 },
+  { name: "Playwright", icon: "/icons/skills/playwright.svg", level: 85 },
+  { name: "SQL", icon: "/icons/skills/sql.svg", level: 80 },
+  { name: "Git", icon: "/icons/skills/git.svg", level: 90 },
+  { name: "Docker", icon: "/icons/skills/Docker.svg", level:50},
+  { name: "Redis", icon: "/icons/skills/Redis.svg", level:90},
+  { name: "Celery", icon: "/icons/skills/Celery.svg", level:60},
+  { name: "RestAPI", icon: "/icons/skills/RestAPI.svg", level:60},
+  { name: "PostgresSQL", icon: "/icons/skills/PostgresSQL.svg", level:60},
   
 ];
