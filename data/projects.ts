@@ -18,12 +18,12 @@ export const projects: Project[] = [
     link: "https://www.narayanpurhighschool.edu.bd/",
   },
     {
-    name: "Amazon Scraper",
+    name: "Besttolify",
     description:
       "Production-grade scraper for Amazon, built with Scrapy + Playwright, stealth and anti-bot optimized.",
     image: "/projects/amazon_scraper.png",
     techStack: ["Python", "Scrapy", "Playwright", "Docker"],
-    link: "https://github.com/mamun700263/amazon-scraper",
+    link: "https://bestoolify-tools.onrender.com/",
   }
 
 ];
