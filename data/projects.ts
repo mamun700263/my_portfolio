@@ -7,23 +7,20 @@ export type Project = {
 };
 
 export const projects: Project[] = [
-
-
-    {
+  {
     name: "Narayanpur High School",
     description:
-      "Full Stack web app to maintain a high schools students, teachers , staff built with dajngo , react, redis used by 500+",
+      "A role-based student management platform used by 500+ students, teachers, and staff — featuring automated exam grading and ranking across multiple subjects, PDF result certificates, and JWT-based access control.",
     image: "/projects/narayanpur_high_school.png",
-    techStack: ["React", "Tailwind","Python", "Django", "redis", "celery"],
+    techStack: ["Django", "DRF", "PostgreSQL", "Redis", "React", "Tailwind"],
     link: "https://www.narayanpurhighschool.edu.bd/",
   },
-    {
-    name: "Amazon Scraper",
+  {
+    name: "Tavdev Monitor",
     description:
-      "Production-grade scraper for Amazon, built with Scrapy + Playwright, stealth and anti-bot optimized.",
-    image: "/projects/amazon_scraper.png",
-    techStack: ["Python", "Scrapy", "Playwright", "Docker"],
-    link: "https://github.com/mamun700263/amazon-scraper",
-  }
-
+      "A full-stack uptime monitoring platform with configurable health checks, built with a concurrency-safe quota system using atomic database updates to eliminate race conditions under simultaneous monitor-creation requests.",
+    image: "/projects/tavdev_monitor.png",
+    techStack: ["FastAPI", "PostgreSQL", "Redis", "Celery", "Next.js", "Docker"],
+    link: "https://monitor.tavdev.com/",
+  },
 ];
