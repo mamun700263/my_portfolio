@@ -1,3 +1,12 @@
+export type Project = {
+  name: string;
+  description: string;
+  image: string;
+  techStack: string[];
+  link: string;
+  github?: string;
+};
+
 export const projects: Project[] = [
   {
     name: "Narayanpur High School",
