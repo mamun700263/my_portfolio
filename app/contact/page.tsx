@@ -1,3 +1,7 @@
+import ContactSection from "@/components/sections/Contacts";
+
+
+
 export default function Skills() {
-  return <div>contact</div>;
+  return <div><ContactSection></ContactSection></div>;
 }
